@@ -39,7 +39,7 @@
         {
             "id": "fellow-4",
             "name": "Yashvi Prem",
-            "photo": "assets/images/headshots/YashviPrem_Headshot.jpg",
+            "photo": "assets/images/headshots/YashviPrem_HeadShot.png",
             "keywords": "Miranda House, DU · Deep RL Halftoning"
         },
         {
@@ -63,7 +63,7 @@
         {
             "id": "fellow-8",
             "name": "Vishwajeet Daspute",
-            "photo": "assets/images/headshots/VishwajeetDaspute_Headshot.jpeg",
+            "photo": "assets/images/headshots/VishwajeetDaspute_HeadShot.png",
             "keywords": "VIT, Pune · RobustSep"
         }
     ],
