@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISL Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                <img src="../assets/images/logos/CISL_Logo_Circle_Tranparent.png" alt="CISL">
+                <span>CISL Admin</span>
+            </div>
+            <nav class="sidebar__nav">
+                <button class="nav-btn active" data-section="news">📰 News & Updates</button>
+                <button class="nav-btn" data-section="people">👥 People</button>
+                <button class="nav-btn" data-section="projects">📁 Projects</button>
+                <button class="nav-btn" data-section="research">🔬 Research</button>
+                <button class="nav-btn" data-section="opportunities">💼 Opportunities</button>
+            </nav>
+            <div class="sidebar__auth">
+                <div id="auth-status" class="auth-status">Not connected</div>
+                <button id="connect-btn" class="btn btn--primary">Connect GitHub</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Auth Modal -->
+            <div id="auth-modal" class="modal">
+                <div class="modal__content">
+                    <h2>Connect to GitHub</h2>
+                    <p>Enter your GitHub Personal Access Token with <code>repo</code> scope to manage content.</p>
+                    <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxx">
+                    <div class="modal__actions">
+                        <button id="save-token-btn" class="btn btn--primary">Connect</button>
+                        <button id="cancel-auth-btn" class="btn btn--secondary">Cancel</button>
+                    </div>
+                    <p class="modal__help">
+                        <a href="https://github.com/settings/tokens/new?scopes=repo" target="_blank">Generate a new
+                            token →</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- News Section -->
+            <section id="section-news" class="content-section active">
+                <div class="section-header">
+                    <h1>News & Updates</h1>
+                    <button class="btn btn--primary" onclick="showAddForm('news')">+ Add News</button>
+                </div>
+                <div id="news-list" class="item-list"></div>
+            </section>
+
+            <!-- People Section -->
+            <section id="section-people" class="content-section">
+                <div class="section-header">
+                    <h1>People</h1>
+                    <button class="btn btn--primary" onclick="showAddForm('people')">+ Add Person</button>
+                </div>
+                <h3>Research Leads</h3>
+                <div id="leads-list" class="item-list"></div>
+                <h3>Research Fellows</h3>
+                <div id="fellows-list" class="item-list"></div>
+                <h3>Alumni</h3>
+                <div id="alumni-list" class="item-list"></div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="section-projects" class="content-section">
+                <div class="section-header">
+                    <h1>Projects</h1>
+                    <button class="btn btn--primary" onclick="showAddForm('projects')">+ Add Project</button>
+                </div>
+                <div id="projects-list" class="item-list"></div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="section-research" class="content-section">
+                <div class="section-header">
+                    <h1>Research Interests</h1>
+                    <button class="btn btn--primary" onclick="showAddForm('research')">+ Add Research Area</button>
+                </div>
+                <div id="research-list" class="item-list"></div>
+            </section>
+
+            <!-- Opportunities Section -->
+            <section id="section-opportunities" class="content-section">
+                <div class="section-header">
+                    <h1>Opportunities</h1>
+                    <button class="btn btn--primary" onclick="showAddForm('opportunities')">+ Add Opportunity</button>
+                </div>
+                <div id="opportunities-list" class="item-list"></div>
+            </section>
+
+            <!-- Edit Modal -->
+            <div id="edit-modal" class="modal">
+                <div class="modal__content modal__content--wide">
+                    <h2 id="edit-modal-title">Edit Item</h2>
+                    <form id="edit-form"></form>
+                    <div class="modal__actions">
+                        <button type="button" id="save-edit-btn" class="btn btn--primary">Save</button>
+                        <button type="button" id="delete-btn" class="btn btn--danger">Delete</button>
+                        <button type="button" id="cancel-edit-btn" class="btn btn--secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

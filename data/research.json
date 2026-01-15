@@ -1,0 +1,50 @@
+[
+    {
+        "id": "research-1",
+        "title": "Adversarial Robustness Metrics for Synthetic Media Detection",
+        "subtitle": "Benchmarking and evaluation frameworks for deepfake detection systems",
+        "description": "Development of standardized evaluation protocols and robustness metrics for detecting AI-generated media. This includes adversarial perturbation analysis, cross-domain generalization benchmarks, and detection-evasion trade-off quantification under realistic deployment conditions.",
+        "keywords": [
+            "Deepfake detection",
+            "Adversarial robustness",
+            "Benchmark design",
+            "Forensic analysis"
+        ]
+    },
+    {
+        "id": "research-2",
+        "title": "Physics-Informed Generative Models for CAD and AEC Applications",
+        "subtitle": "Constraint-aware image synthesis for architecture, engineering, and construction",
+        "description": "Integration of physical constraints (structural loads, material properties, manufacturing tolerances) into generative architectures for producing design candidates that satisfy real-world engineering requirements. Applications span parametric facade generation, structural topology optimization, and fabrication-aware geometry synthesis.",
+        "keywords": [
+            "Physics-informed ML",
+            "CAD generation",
+            "Structural constraints",
+            "Parametric design"
+        ]
+    },
+    {
+        "id": "research-3",
+        "title": "Semantic Grounding and Prompt-Output Alignment in Diffusion Models",
+        "subtitle": "Measuring and enforcing text-to-image fidelity under compositional prompts",
+        "description": "Research into quantifiable alignment metrics between natural language prompts and generated visual outputs, with focus on compositional semantics, attribute binding accuracy, spatial relationship preservation, and negation handling. Includes development of automated evaluation pipelines and alignment-aware fine-tuning strategies.",
+        "keywords": [
+            "Prompt alignment",
+            "Compositional generation",
+            "Semantic grounding",
+            "T2I evaluation"
+        ]
+    },
+    {
+        "id": "research-4",
+        "title": "Distributed Inference and Privacy-Preserving Vision Systems",
+        "subtitle": "Federated learning and edge deployment for resource-constrained computer vision",
+        "description": "Exploration of federated learning protocols for vision models that preserve data privacy while enabling collaborative model improvement. Research includes communication-efficient gradient compression, differential privacy guarantees, heterogeneous device optimization, and latency-bounded inference for edge deployment scenarios.",
+        "keywords": [
+            "Federated learning",
+            "Edge deployment",
+            "Privacy-preserving ML",
+            "Model compression"
+        ]
+    }
+]

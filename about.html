@@ -89,25 +89,11 @@
                     </ul>
                 </div>
 
-                <!-- News Ticker -->
+                <!-- News Ticker (loaded dynamically) -->
                 <aside class="news-ticker fade-in">
                     <div class="news-ticker__header">News & Updates</div>
-                    <div class="news-ticker__content">
-                        <div class="news-ticker__item">
-                            <span class="news-ticker__date">Jan 2025</span>
-                            <span class="news-ticker__text">Website launch! Welcome to the new CISL online
-                                presence.</span>
-                        </div>
-                        <div class="news-ticker__item">
-                            <span class="news-ticker__date">Jan 2025</span>
-                            <span class="news-ticker__text">Now accepting applications for Research Fellows on the
-                                DMFP project.</span>
-                        </div>
-                        <div class="news-ticker__item">
-                            <span class="news-ticker__date">Nov 2024</span>
-                            <span class="news-ticker__text">Team expansion: Welcoming new Research Fellows to the
-                                lab!</span>
-                        </div>
+                    <div id="news-content" class="news-ticker__content">
+                        <!-- Content loaded dynamically from data/news.json -->
                     </div>
                 </aside>
             </div>
@@ -129,6 +115,7 @@
         </div>
     </footer>
 
+    <script src="scripts/content-loader.js"></script>
 </body>
 
 </html>
