@@ -43,91 +43,30 @@
         <div class="container">
             <h1 class="fade-in">People</h1>
 
-            <!-- Research Leads -->
+            <!-- Research Leads (loaded dynamically) -->
             <section class="people-section fade-in">
                 <h2>Research Leads</h2>
-
-                <div class="people-grid people-grid--leads">
-                    <div class="person person--lead card-accent">
-                        <img src="assets/images/headshots/AngadAhuja_HeadShot.jpeg" alt="Angad Singh Ahuja"
-                            class="person__photo">
-                        <div class="person__name">Angad Singh Ahuja</div>
-                        <div class="person__role">Research Lead</div>
-                        <div class="person__keywords">RobustSep</div>
-                    </div>
-
-                    <div class="person person--lead card-accent">
-                        <img src="assets/images/headshots/PoorvaPatel_HeadShot.jpeg" alt="Poorva Patel"
-                            class="person__photo">
-                        <div class="person__name">Poorva Patel</div>
-                        <div class="person__role">Research Lead</div>
-                        <div class="person__keywords">Deep Reinforcement Learning Halftoning, Colour Perception
-                            Preservation</div>
-                    </div>
+                <div id="leads-content" class="people-grid people-grid--leads">
+                    <!-- Content loaded dynamically from data/people.json -->
                 </div>
             </section>
 
             <hr class="section-divider section-divider--gradient">
 
-            <!-- Research Fellows -->
+            <!-- Research Fellows (loaded dynamically) -->
             <section class="people-section fade-in">
                 <h2>Research Fellows</h2>
+                <div id="fellows-content" class="people-grid people-grid--fellows">
+                    <!-- Content loaded dynamically from data/people.json -->
+                </div>
+            </section>
 
-                <div class="people-grid people-grid--fellows">
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/AarushRamAnandh_HeadShot.jpeg" alt="Aarush Ram Anandh"
-                            class="person__photo">
-                        <div class="person__name">Aarush Ram Anandh</div>
-                        <div class="person__keywords">Ashoka University · Colour Perception Preservation</div>
-                    </div>
-
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/SahilpreetKaurGill_Headshot.png" alt="Sahilpreet Kaur Gill"
-                            class="person__photo">
-                        <div class="person__name">Sahilpreet Kaur Gill</div>
-                        <div class="person__keywords">Miranda House, DU · Deep RL Halftoning</div>
-                    </div>
-
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/PranjalWala_Headshot.png" alt="Pranjal Wala"
-                            class="person__photo">
-                        <div class="person__name">Pranjal Wala</div>
-                        <div class="person__keywords">Miranda House, DU · RobustSep</div>
-                    </div>
-
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/YashviPrem_Headshot.jpg" alt="Yashvi Prem"
-                            class="person__photo">
-                        <div class="person__name">Yashvi Prem</div>
-                        <div class="person__keywords">Miranda House, DU · Deep RL Halftoning</div>
-                    </div>
-
-                     <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/RushabhLodha_HeadShot.png" alt="Rushabh Lodha"
-                            class="person__photo">
-                        <div class="person__name">Rushabh Lodha</div>
-                        <div class="person__keywords">IIT, Mandi · RobustSep</div>
-                    </div>
-
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/SoumiPal_HeadShot.png" alt="Soumi Pal" class="person__photo">
-                        <div class="person__name">Soumi Pal</div>
-                        <div class="person__keywords">BITS, Pilani · Deep RL Halftoning</div>
-                    </div>
-
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/ShreeyaSrivastava_HeadShot.jpg" alt="Shreeya Srivastava"
-                            class="person__photo">
-                        <div class="person__name">Shreeya Srivastava</div>
-                        <div class="person__keywords">Manipal Institute of Technology · RobustSep</div>
-                    </div>
-
-                    <div class="person person--fellow card-accent">
-                        <img src="assets/images/headshots/VishwajeetDaspute_Headshot.jpeg" alt="Vishwajeet Daspute"
-                            class="person__photo">
-                        <div class="person__name">Vishwajeet Daspute</div>
-                        <div class="person__keywords">VIT, Pune · RobustSep</div>
-                    </div>
+            <!-- Alumni (loaded dynamically, hidden if empty) -->
+            <section class="people-section fade-in" id="alumni-section" style="display: none;">
+                <hr class="section-divider section-divider--gradient">
+                <h2>Alumni</h2>
+                <div id="alumni-content" class="people-grid people-grid--fellows">
+                    <!-- Content loaded dynamically from data/people.json -->
                 </div>
             </section>
         </div>
@@ -148,6 +87,7 @@
         </div>
     </footer>
 
+    <script src="scripts/content-loader.js"></script>
 </body>
 
 </html>

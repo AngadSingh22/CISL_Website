@@ -64,10 +64,15 @@ const CISL = {
             ? `<a href="${person.links.linkedin}" target="_blank" rel="noopener" class="person__linkedin">LinkedIn</a>`
             : '';
 
+        const roleHTML = person.role
+            ? `<div class="person__role">${person.role}</div>`
+            : '';
+
         return `
             <div class="person ${isLead ? 'person--lead' : 'person--fellow'} card-accent">
                 <img src="${person.photo}" alt="${person.name}" class="person__photo">
                 <div class="person__name">${person.name}</div>
+                ${roleHTML}
                 <div class="person__keywords">${person.keywords}</div>
                 ${linkedinHTML}
             </div>
