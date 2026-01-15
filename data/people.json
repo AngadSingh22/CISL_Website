@@ -89,13 +89,13 @@
         {
             "id": "alumni-4",
             "name": "Rishi Kewalya",
-            "photo": "assets/images/people/rishi_kewalya.png",
+            "photo": "assets/images/headshots/RishiKewalya_HeadShot_Alum.png",
             "keywords": "Thadomal Shahani Engineering College · RobustSep"
         },
         {
             "id": "alumni-5",
             "name": "Tejaswini Samanta",
-            "photo": "assets/images/people/tejaswini_samanta.png",
+            "photo": "assets/images/headshots/TejaswiniSamanta_HeadShot_Alum.png",
             "keywords": "Miranda House, DU · In-painting based Generative Image-Synthesis"
         }
     ]
