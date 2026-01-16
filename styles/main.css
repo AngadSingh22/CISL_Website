@@ -91,6 +91,41 @@ body {
   background-color: var(--color-bg-body);
 }
 
+/* ========== Vertical Banner Sidebar ========== */
+.vertical-banner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.vertical-banner::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300vh;
+  height: 100px;
+  background: url('../assets/images/banners/dmfp_cover.jpeg') left center repeat-x;
+  background-size: auto 100%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+/* Offset main content to make room for vertical banner */
+.page-wrapper main {
+  margin-left: 100px;
+}
+
+/* Header and footer span full width, in front of banner */
+.page-wrapper header,
+.page-wrapper footer {
+  position: relative;
+  z-index: 100;
+}
+
 /* ========== Typography ========== */
 h1,
 h2,
@@ -239,23 +274,12 @@ nav a.active {
   color: var(--color-text-inverse);
 }
 
-/* ========== Footer with Banner Background ========== */
+/* ========== Footer ========== */
 footer {
   position: relative;
-  background: url('../assets/images/banners/Accent_Banner_CISL.png') center/cover no-repeat;
+  background: var(--color-bg-footer);
   padding: var(--space-2xl) 0;
   margin-top: var(--space-3xl);
-}
-
-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(45, 74, 90, 0.92) 0%, rgba(58, 74, 90, 0.95) 100%);
-  z-index: 0;
 }
 
 footer .container {
@@ -1298,6 +1322,18 @@ footer a:hover {
   :root {
     --font-size-3xl: 1.75rem;
     --font-size-2xl: 1.5rem;
+  }
+
+  .vertical-banner {
+    width: 40px;
+  }
+
+  .vertical-banner::before {
+    height: 60px;
+  }
+
+  .page-wrapper main {
+    margin-left: 40px;
   }
 
   .container {
