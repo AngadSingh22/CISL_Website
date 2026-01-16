@@ -300,6 +300,14 @@ footer .container {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--space-md);
+  max-width: none;
+  padding: 0 var(--space-xl) 0 calc(100px + var(--space-xl));
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-xs);
 }
 
 footer p {
