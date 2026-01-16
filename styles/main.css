@@ -847,9 +847,12 @@ footer a:hover {
 .open-call {
   background: var(--color-accent);
   color: var(--color-text-inverse);
-  padding: var(--space-xl);
+  padding: var(--space-2xl);
   border-radius: var(--border-radius);
   margin-bottom: var(--space-2xl);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .open-call h2 {
