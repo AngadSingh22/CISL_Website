@@ -347,7 +347,10 @@ footer a:hover {
   margin-bottom: var(--space-2xl);
   max-width: var(--max-width-text);
   line-height: var(--line-height-relaxed);
-  padding-left: var(--space-sm);
+}
+
+.hero-section .section-intro {
+  padding-left: 350px;
 }
 
 .section-divider {
