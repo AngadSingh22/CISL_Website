@@ -359,6 +359,12 @@ footer a:hover {
   margin: var(--space-lg) 0 var(--space-2xl) 0;
 }
 
+.section-divider--thin {
+  border: none;
+  border-top: 1px solid #a7a38e;
+  margin: var(--space-md) 0;
+}
+
 /* ========== People Styles ========== */
 .people-section {
   margin-bottom: var(--space-3xl);
