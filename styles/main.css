@@ -150,9 +150,15 @@ h1 {
 
 h2 {
   font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-2xl);
+  margin-top: var(--space-xl);
+  text-decoration: underline;
+  text-decoration-color: #a7a38e;
+  text-underline-offset: 4px;
+}
+
+h2.h2--compact {
   margin-bottom: var(--space-lg);
-  padding-bottom: var(--space-sm);
-  border-bottom: 1px solid #a7a38e;
 }
 
 h3 {
