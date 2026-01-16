@@ -216,7 +216,7 @@ li {
 
 /* ========== Header (Dark Compact - Navy) ========== */
 header {
-  background: var(--color-bg-header);
+  background: #5a532d;
   padding: var(--space-md) 0;
   position: fixed;
   top: 0;
@@ -286,7 +286,7 @@ footer {
   left: -100px;
   width: calc(100% + 100px);
   z-index: 100;
-  background: var(--color-bg-footer);
+  background: #5a532d;
   padding: var(--space-2xl) 0;
   margin-top: auto;
 }
