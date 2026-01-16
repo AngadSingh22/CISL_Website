@@ -89,7 +89,7 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-body);
   color: var(--color-text-primary);
-  background-color: var(--color-bg-body);
+  background-color: #d2d2ce;
   overscroll-behavior: none;
 }
 
