@@ -1181,6 +1181,7 @@ footer a:hover {
   position: relative;
   padding: var(--space-2xl) 0;
   margin-bottom: var(--space-xl);
+  background: url('../assets/images/banners/Accent_Banner_CISL.png') center/cover no-repeat;
 }
 
 .hero-section::before {
