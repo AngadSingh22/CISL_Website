@@ -230,7 +230,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   max-width: none;
-  padding: 0 var(--space-xl);
+  padding: 0 var(--space-md);
 }
 
 .site-branding {
@@ -245,14 +245,14 @@ header .container {
 }
 
 .site-icon {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   filter: brightness(0) invert(1);
 }
 
 .site-title {
   font-family: var(--font-sans);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   font-weight: 600;
   color: var(--color-text-inverse);
   letter-spacing: 0.02em;
