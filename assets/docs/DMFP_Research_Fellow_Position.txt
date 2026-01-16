@@ -2,8 +2,7 @@ About: We are a team of researchers working to build a generative modelling pipe
 
 Preferred background: CS/ML/AI/Math; Advanced UGs and higher preferred! General familiarity with basic ML theory is expected. Familiarity with image-generation, conversion, or compression algorithms would be exceptional (although not necessary). Python + PyTorch/TensorFlow is a plus (we'll support skill-building).
 
-The field seems a little niche, but the team will help you learn in whatever manner we can (it was and is a learning process for us too!), so please don't hesitate to apply.
-
+The field is niche, and the team will help you learn in whatever manner we can. It was and is a learning process for us too! Please don't hesitate to apply.
 We are expecting a commitment of around 8–14 hrs/week, perhaps one weekly meeting + 1–2 additional syncs as needed.
 
 What you'll gain from this (non-monetary): hands-on modelling, industry-aligned problem-solving, lots of reading and brainstorming, potential authorship, and portfolio-worthy work.
