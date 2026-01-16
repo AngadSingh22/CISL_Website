@@ -81,6 +81,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
 }
 
 body {
@@ -89,6 +90,7 @@ body {
   line-height: var(--line-height-body);
   color: var(--color-text-primary);
   background-color: var(--color-bg-body);
+  overscroll-behavior: none;
 }
 
 /* ========== Vertical Banner Sidebar ========== */
@@ -114,17 +116,19 @@ body {
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
+/* Offset content for fixed header */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 64px;
+}
+
 /* Offset main content to make room for vertical banner */
 .page-wrapper main {
   margin-left: 100px;
 }
 
-/* Header and footer span full width, in front of banner */
-.page-wrapper header,
-.page-wrapper footer {
-  position: relative;
-  z-index: 100;
-}
 
 /* ========== Typography ========== */
 h1,
@@ -214,9 +218,11 @@ li {
 header {
   background: var(--color-bg-header);
   padding: var(--space-md) 0;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 header .container {
@@ -277,14 +283,12 @@ nav a.active {
 /* ========== Footer ========== */
 footer {
   position: relative;
+  left: -100px;
+  width: calc(100% + 100px);
+  z-index: 100;
   background: var(--color-bg-footer);
   padding: var(--space-2xl) 0;
-  margin-top: var(--space-3xl);
-}
-
-footer .container {
-  position: relative;
-  z-index: 1;
+  margin-top: auto;
 }
 
 footer .container {
@@ -1334,6 +1338,11 @@ footer a:hover {
 
   .page-wrapper main {
     margin-left: 40px;
+  }
+
+  footer {
+    left: -40px;
+    width: calc(100% + 40px);
   }
 
   .container {
