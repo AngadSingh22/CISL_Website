@@ -355,7 +355,7 @@ footer a:hover {
 
 .section-divider {
   border: none;
-  border-top: 1px solid var(--color-border-light);
+  border-top: 1px solid #a7a38e;
   margin: var(--space-lg) 0 var(--space-2xl) 0;
 }
 
@@ -805,13 +805,16 @@ footer a:hover {
 
 /* ========== Research Areas ========== */
 .research-area {
-  margin-bottom: var(--space-2xl);
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-3xl);
   padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: 1px solid #a7a38e;
 }
 
-.research-area:last-child {
+.research-area:last-of-type {
   border-bottom: none;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-xl);
 }
 
 .research-area h3 {
