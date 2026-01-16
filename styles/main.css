@@ -329,7 +329,7 @@ footer a:hover {
 
 /* ========== Logo ========== */
 .logo {
-  max-width: 450px;
+  max-width: 550px;
   margin-bottom: var(--space-2xl);
 }
 
@@ -340,11 +340,12 @@ footer a:hover {
 
 /* ========== Section Styles ========== */
 .section-intro {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-text-secondary);
   margin-bottom: var(--space-2xl);
   max-width: var(--max-width-text);
   line-height: var(--line-height-relaxed);
+  padding-left: 350px;
 }
 
 .section-divider {
