@@ -42,7 +42,7 @@ const CISL = {
         // Render Research Leads
         const leadsContainer = document.getElementById(leadsId);
         if (leadsContainer && data.leads) {
-            leadsContainer.innerHTML = data.leads.map(person => this.renderPersonCard(person, true)).join('');
+            leadsContainer.innerHTML = data.leads.map(person => this.renderPersonCard(person, false)).join('');
         }
 
         // Render Research Fellows
