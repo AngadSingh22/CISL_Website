@@ -65,6 +65,12 @@
             "name": "Vishwajeet Daspute",
             "photo": "assets/images/headshots/VishwajeetDaspute_HeadShot.png",
             "keywords": "VIT, Pune · RobustSep"
+        },
+        {
+            "id": "fellow-9",
+            "name": "Ananya Das",
+            "photo": "assets/images/headshots/AnanyaDas_HeadShot.jpg",
+            "keywords": "Manipal University Jaipur · Deep RL Halftoning"
         }
     ],
     "alumni": []
