@@ -28,12 +28,6 @@
       "keywords": "Miranda House, DU · RobustSep"
     },
     {
-      "id": "fellow-4",
-      "name": "Yashvi Prem",
-      "photo": "assets/images/headshots/YashviPrem_HeadShot.png",
-      "keywords": "Miranda House, DU · Deep RL Halftoning"
-    },
-    {
       "id": "fellow-5",
       "name": "Rushabh Lodha",
       "photo": "assets/images/headshots/RushabhLodha_HeadShot.png",
@@ -67,6 +61,12 @@
       "id": "fellow-2",
       "name": "Sahilpreet Kaur",
       "photo": "assets/images/headshots/SahilpreetKaurGill_Headshot.png",
+      "keywords": "Miranda House, DU · Deep-RL Halftoning"
+    },
+    {
+      "id": "fellow-4",
+      "name": "Yashvi Prem",
+      "photo": "assets/images/headshots/YashviPrem_HeadShot.png",
       "keywords": "Miranda House, DU · Deep-RL Halftoning"
     }
   ],
